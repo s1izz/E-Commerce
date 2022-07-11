@@ -89,6 +89,7 @@ li{
     text-align: center;
     border: none;
     color: #7342b6;
+    display: none;
 }
 
 .menu__backdrop{
@@ -99,12 +100,44 @@ li{
     bottom: 0;
     left: 0;
     z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open {
+    
+}
+
+.menu__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__list{
+    padding: 32px 0;
+}
+
+.menu__link{
+    font-size: 40px;
+    color: white;
 }
 
 .btn__menu--close{
     position: absolute;
     right: 20px;
     top: 10px;
+    padding: 8px;
+    color: white;
 }
 
 /* LANDING */
@@ -354,4 +387,14 @@ footer{
 
 .footer__link{
     padding: 0 8px;
+}
+
+@media (max-width: 550px) {
+    .nav__links{
+        display: none;
+    }
+
+    .btn__menu {
+        display: block;
+    }
 }
