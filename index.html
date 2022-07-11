@@ -22,6 +22,25 @@
             <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
           </ul>
         </div>
+        <button class="btn__menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul>
+            <li class="menu__list">
+              <a href="#" class="menu__link">Home</a>
+            </li>
+            <li class="menu__list">
+              <a href="#features" class="menu__link">Books</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link no-cursor">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <header>
         <div class="header__container">
@@ -30,7 +49,9 @@
             <h2>
               Find your dream book with <span class="purple">Library</span>
             </h2>
-            <button class="btn">Browse Books</button>
+            <a href="#features">
+              <button class="btn">Browse Books</button>
+            </a>
           </div>
           <figure class="header__img--wrapper">
             <img src="./assets/Undraw_Books.svg" class="header__img" alt="" />
@@ -179,11 +200,7 @@
             <div class="books">
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img
-                    class="book__img"
-                    src="./assets/book-1.jpeg"
-                    alt=""
-                  />
+                  <img class="book__img" src="./assets/book-1.jpeg" alt="" />
                 </figure>
                 <div class="book__title">The 10X Rule</div>
                 <div class="book__ratings">
@@ -197,11 +214,7 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img
-                    class="book__img"
-                    src="./assets/book-2.jpeg"
-                    alt=""
-                  />
+                  <img class="book__img" src="./assets/book-2.jpeg" alt="" />
                 </figure>
                 <div class="book__title">Be Obsessed Or Be Average</div>
                 <div class="book__ratings">
@@ -215,11 +228,7 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img
-                    class="book__img"
-                    src="./assets/book-3.jpeg"
-                    alt=""
-                  />
+                  <img class="book__img" src="./assets/book-3.jpeg" alt="" />
                 </figure>
                 <div class="book__title">Rich Dad Poor Dad</div>
                 <div class="book__ratings">
@@ -233,11 +242,7 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img
-                    class="book__img"
-                    src="./assets/book-4.jpeg"
-                    alt=""
-                  />
+                  <img class="book__img" src="./assets/book-4.jpeg" alt="" />
                 </figure>
                 <div class="book__title">Cashflow Quadrant</div>
                 <div class="book__ratings">
@@ -251,11 +256,7 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img
-                    class="book__img"
-                    src="./assets/book-5.jpeg"
-                    alt=""
-                  />
+                  <img class="book__img" src="./assets/book-5.jpeg" alt="" />
                 </figure>
                 <div class="book__title">48 Laws of Power</div>
                 <div class="book__ratings">
@@ -269,11 +270,7 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img
-                    class="book__img"
-                    src="./assets/book-6.jpeg"
-                    alt=""
-                  />
+                  <img class="book__img" src="./assets/book-6.jpeg" alt="" />
                 </figure>
                 <div class="book__title">The 5 Second Rule</div>
                 <div class="book__ratings">
@@ -287,11 +284,7 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img
-                    class="book__img"
-                    src="./assets/book-7.jpg"
-                    alt=""
-                  />
+                  <img class="book__img" src="./assets/book-7.jpg" alt="" />
                 </figure>
                 <div class="book__title">Your Next Five Moves</div>
                 <div class="book__ratings">
@@ -305,11 +298,7 @@
               </div>
               <div class="book">
                 <figure class="book__img--wrapper">
-                  <img
-                    class="book__img"
-                    src="./assets/book-8.jpeg"
-                    alt=""
-                  />
+                  <img class="book__img" src="./assets/book-8.jpeg" alt="" />
                 </figure>
                 <div class="book__title">Mastery</div>
                 <div class="book__ratings">
@@ -329,18 +318,13 @@
       <section id="explore">
         <div class="container">
           <div class="row row__column">
-            <h2>
-              Explore more <span class="purple">Books</span>
-            </h2>
+            <h2>Explore more <span class="purple">Books</span></h2>
             <a href="#features">
-              <button class="btn">
-                Browse books
-              </button>
+              <button class="btn">Browse books</button>
             </a>
           </div>
         </div>
       </section>
-
     </main>
 
     <footer>
@@ -348,7 +332,11 @@
         <div class="row row__column">
           <a href="#">
             <figure class="footer__logo">
-              <img src="./assets/Library.svg" class="footer__logo--img" alt="">
+              <img
+                src="./assets/Library.svg"
+                class="footer__logo--img"
+                alt=""
+              />
             </figure>
           </a>
           <div class="footer__list">
@@ -361,6 +349,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>
